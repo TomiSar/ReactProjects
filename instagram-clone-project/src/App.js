@@ -6,6 +6,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import { Button, Input } from "@material-ui/core";
 import ImageUpload from './ImageUpload';
+import InstagramEmbed from 'react-instagram-embed';
 
 //https://material-ui.com/components/modal/#api -> Modal syling
 function getModalStyle() {
@@ -101,14 +102,6 @@ function App() {
 
   return (
     <div className="App">
-       {/* If the user is not null, logged in or user exist image can be uploaded. Else login to upload image*/}
-       {/* optional chaining operator ?. validate that each reference in the chain is valid. --> nullish (null or undefined) check */}
-      { user?.displayName ? (
-        <ImageUpload username={user.displayName} />
-      ): (
-        <h3>Sorry you need to login to upload</h3>
-      )}      
-
       <Modal open={open} onClose={() => setOpen(false)}>
         <div style={modalStyle} className={classes.paper}>
           <form className="app__signup">
@@ -117,9 +110,7 @@ function App() {
                 className="app__headerImage"
                 src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
                 alt=""/>
-              {/* <img className="app__secondHeaderImage" src="https://logodix.com/logo/1049778.png" alt=""/> */}
             </center>
-
 
             <Input
               placeholder="username"
@@ -176,30 +167,57 @@ function App() {
         <img
           className="app__headerImage"
           src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
-          alt=""
-        />
+          alt=""/>
+
+          {/*Logout/Sign up button from Material UI */}
+          {/*If the user is not null, logged in or user exist logout is available.If user doesn't exist or null the Sign up is available*/}
+          { user ? (
+            <Button onClick={() => auth.signOut()}>Logout</Button>
+          ): (
+          <div className="app__loginContainer">
+            <Button onClick={() => setOpenSignIn(true)}>Sign in</Button>
+            <Button onClick={() => setOpen(true)}>Sign up</Button>
+          </div>
+          )}
       </div>
 
-      {/* Logout/Sign up button from Material UI */}
-      {/* If the user is not null, logged in or user exist logout is available.If user doesn't exist or null the Sign up is available*/}
-      { user ? (
-         <Button onClick={() => auth.signOut()}>Logout</Button>
-      ): (
-        <div className="app__loginContainer">
-          <Button onClick={() => setOpenSignIn(true)}>Sign in</Button>
-          <Button onClick={() => setOpen(true)}>Sign up</Button>
+      <div className="app__posts">
+        <div className="app__postsLeft">
+            {/* Posts: Send all posts in posts one at the time with username, caption and imageUrl  */}
+            { posts.map(({ id, post }) => (
+              <Post key={id} postId={id} user={user} username={post.username} caption={post.caption} imageUrl={post.imageUrl} />
+              ))
+            }
         </div>
-      )}
+        <div className="app__postsRight">
+            <InstagramEmbed
+              url='https://instagr.am/p/Zw9o4/'
+              clientAccessToken='123|456'
+              maxWidth={320}
+              hideCaption={false}
+              containerTagName='div'
+              protocol=''
+              injectScript
+              onLoading={() => {}}
+              onSuccess={() => {}}
+              onAfterRender={() => {}}
+              onFailure={() => {}}
+            />
+        </div>
+      </div>
       
-      <h1> 📸 Instagram clone application with <a href={url}>React</a> 🚀</h1>
-      {/* Posts: Send all posts in posts one at the time wit ucername, caption and imageUrl  */}
-      { posts.map(({ id, post }) => (
-          <Post key={id} username={post.username} caption={post.caption} imageUrl={post.imageUrl} />
-      ))}
+      <center>
+        <h1 className="app__title"> 📸 Instagram clone application with <a href={url} > React</a> 🚀</h1>
+      </center>
 
-      {/* Posts */}
-      {/* <Post username="Hanna" caption="Yeah Baby way to go <3" imageUrl="https://classicrock995.com/wp-content/uploads/2020/11/Facebook-logo.png" />
-      <Post username="Simo" caption="This is so cool!" imageUrl="https://logos-world.net/wp-content/uploads/2020/11/Gmail-Logo.png" /> */}
+      {/* If the user is not null, logged in or user exist image can be uploaded. Else login to upload image*/}
+      {/* optional chaining operator ?. validate that each reference in the chain is valid. --> nullish (null or undefined) check */}
+      { user?.displayName ? (
+        <ImageUpload username={user.displayName} />
+      ): (
+        <h3 className="app__logintext">  Sorry you need to login to upload </h3>
+      )}
+
     </div>
   );
 }
