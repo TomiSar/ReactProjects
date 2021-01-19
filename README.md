@@ -1,4 +1,4 @@
 # ReactProjects
 Projects made using ReactJS
-# Learning material and training 
+# Also including some Learning material, training and online courses
 Basic stuff and learning material from WEB
