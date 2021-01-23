@@ -32,16 +32,6 @@ const Create = () => {
         .catch(err => {
             console.error('Error: ', err.message);
         })
-
-        // fetch('http://localhost:4000/blogs', {
-        //     method: 'POST',
-        //     headers: { 'Content-Type': 'application/json' },
-        //     body: JSON.stringify(blog)
-        // }).then(() => {
-        //     console.log('New Blog added in DB.')
-        // }).catch(err => {
-        //     console.log(err.message);
-        // })
     }
 
     return (
