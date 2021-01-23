@@ -50,3 +50,7 @@
   color: #f1356d;;
   border-bottom: 8px;
 }
+
+.blog-preview a {
+  text-decoration: none;
+}
