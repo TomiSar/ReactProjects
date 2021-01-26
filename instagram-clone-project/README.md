@@ -68,3 +68,23 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Deploying app in firebase
+https://dzone.com/articles/react-apps-firebase
+c:\Users\TS\CodeRepos\ReactProjects\instagram-clone-project>firebase deploy
+
+=== Deploying to 'instagram-clone-react-pr-a8460'...
+
+i  deploying hosting
+i  hosting[instagram-clone-react-pr-a8460]: beginning deploy...
+i  hosting[instagram-clone-react-pr-a8460]: found 19 files in build
++  hosting[instagram-clone-react-pr-a8460]: file upload complete
+i  hosting[instagram-clone-react-pr-a8460]: finalizing version...
++  hosting[instagram-clone-react-pr-a8460]: version finalized
+i  hosting[instagram-clone-react-pr-a8460]: releasing new version...
++  hosting[instagram-clone-react-pr-a8460]: release complete
+
++  Deploy complete!
+
+Project Console: https://console.firebase.google.com/project/instagram-clone-react-pr-a8460/overview
+Hosting URL: --> https://instagram-clone-react-pr-a8460.web.app
