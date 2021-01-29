@@ -11,15 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.btn{
-  size: 20pt;
-  width: 150pt;
-  height: 25pt;
-}
-
-.value{
-  size: 20pt;
-  width: 150pt;
-  height: 20pt;
-}

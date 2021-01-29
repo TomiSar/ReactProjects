@@ -104,7 +104,7 @@ main {
 
 .weather-box .description {
   color: #FFF;
-  font-size: 15px;
+  font-size: 25px;
   font-weight: 700;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.2);
 }
