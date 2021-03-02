@@ -1,13 +1,19 @@
 const express = require('express');
 const dotenv = require('dotenv');
-const solors = require('colors');
+const colors = require('colors');
 const morgan = require('morgan');
+const connectDB = require('./config/db')
+
 // dotenv config file path 
-dotenv.config({path: './config/donfig.env'});
+dotenv.config({ path: './config/config.env' })
+
+connectDB();
+
 // import transactions from routes
 const transactions = require('./routes/transactions');
 
 const app = express();
+app.use(express.json());
 
 // Request in this --> route to transactions. This route overrides the '/' route.
 // Postman GET http://localhost:4000/api/v1/transactions
