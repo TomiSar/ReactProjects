@@ -2,21 +2,12 @@ export const defaultState = {
     users:[{
         id:"U1",
         name:"Dev",
-        friends:[`U2`,`U3`,`U4`]
+        friends:[`U2`]
     },{
         id:"U2",
         name:"C. Eeyo",
         friends:[]
-    },,{
-        id:"U3",
-        name:"Team Leader",
-        friends:[`U1`,`U2`,`U4`]
-    },,{
-        id:"U4",
-        name:"Scrum Master",
-        friends:[`U1`,`U2`,`U3`]
-    }
-    ],
+    }],
     groups:[{
         name:"To Do",
         id:"G1",
@@ -66,6 +57,6 @@ export const defaultState = {
         owner:"U1",
         id:"C1",
         task:"T1",
-        content:"Great Job!!"
+        content:"Great work!"
     }]
-}
+};
