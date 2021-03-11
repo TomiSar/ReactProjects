@@ -1,7 +1,7 @@
 // import path from 'path';
 
 const path = require("path");
-// export default {
+//export default {
 module.exports = {
     mode: 'development',
     entry: path.resolve(__dirname, 'src','app'),
@@ -19,7 +19,7 @@ module.exports = {
     module: {
         rules: [{
             test: /\.jsx?/,
-            loader:'babel-loader'
+            loader:'babel-loader',
         }]
     }
 }
