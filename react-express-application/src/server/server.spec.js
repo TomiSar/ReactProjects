@@ -1,12 +1,8 @@
-import {addNewTask, updateTask} from "./server";
+import { addNewTask, updateTask } from './communicate-db'
 
-(async function myFunc() {
-    await addNewTask({
-        name: "My Task",
-        id: "12346"
-    });
-    await updateTask({
-        id: 123456,
-        name: "My task - UPDATED!!"
-    })
+(async function(){
+    await addNewTask({name:"Spec task",isComplete:true,id:"TEST-1"});
+    console.info("Added task");
+    await updateTask({name:"Spec Task (UPDATED)",id:"TEST-1",isComplete:false});
+    console.info("Task updated");
 })();
