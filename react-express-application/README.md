@@ -24,4 +24,4 @@ c:\mongodb\bin>mongod.exe
 ROBO 3T: https://robomongo.org/ 
 
 # Start the development environment
-npm run dev
+npm run start-dev
