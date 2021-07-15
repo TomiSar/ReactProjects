@@ -4,6 +4,7 @@
 
 body {
   --slack-color: #3f0f48;
+  /* --slack-color: #cc0000; */
   overflow: hidden;
 
   margin: 0;
