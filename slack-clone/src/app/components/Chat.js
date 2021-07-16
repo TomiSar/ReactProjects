@@ -17,12 +17,7 @@ function Chat() {
     roomId && db.collection('rooms').doc(roomId)
   );
   const [roomMessages, loading] = useCollection(
-    roomId &&
-      db
-        .collection('rooms')
-        .doc(roomId)
-        .collection('messages')
-        .orderBy('timestamp', 'asc')
+    roomId && db.collection('rooms').doc(roomId).collection('messages').orderBy('timestamp', 'asc')
   );
 
   useEffect(() => {
