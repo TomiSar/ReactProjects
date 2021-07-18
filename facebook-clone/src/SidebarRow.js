@@ -4,7 +4,7 @@ import { Avatar } from '@material-ui/core';
 
 function SidebarRow({ src, Icon, title }) {
     return (
-        <div className="sidebarRow">
+        <div className="sidebarrow">
             { src && <Avatar src={src} />}
             { Icon && <Icon />}
             
