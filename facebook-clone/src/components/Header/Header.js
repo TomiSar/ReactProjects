@@ -5,7 +5,7 @@ import { Search, Home, Flag, SubscriptionsOutlined, StoreOutlined, SupervisedUse
 import { useStateValue } from '../../StateProvider';
 
 function Header() {
-  const [{user}, dicpatch] = useStateValue();
+  const [{user}, dispatch] = useStateValue();
 
   return (
     <div className="header">

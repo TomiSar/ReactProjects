@@ -3,6 +3,8 @@ import { Avatar } from '@material-ui/core';
 import './MessageSender.css';
 import { Videocam, PhotoLibrary, InsertEmoticon} from '@material-ui/icons'
 import { useStateValue } from '../../StateProvider';
+import db from '../../firebase';
+import firebase from 'firebase';
 
 function MessageSender() {
   const [{user}, dispatch] = useStateValue();
@@ -13,8 +15,15 @@ function MessageSender() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // database submit when button is clicked
+    db.collection('posts').add({
+      profilePicture: user.photoURL,
+      image: imageUrl,
+      userName: user.displayName,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+      message: input
+    });
 
+    // Clear form
     setInput("");
     setImageUrl("");
   };
