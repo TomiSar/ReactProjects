@@ -29,8 +29,15 @@ function App() {
           user: user,
         })
       });
-    }
 
+      // pull the playlists names from Spotify
+      spotify.getUserPlaylists().then((playlists) => {
+        dispatch({
+          type: 'SET_PLAYLISTS',
+          playlists: playlists
+        });
+      });
+    }
   }, []);
 
   return <div className="app"> { token ?  <Player spotify={spotify}/> : <Login /> } </div>;
