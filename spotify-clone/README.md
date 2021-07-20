@@ -1,7 +1,7 @@
 ## ReactJs Spotify clone application
 * This is a clone app of Spotify
 * Need to login first by google to see or add post
-* Simple design of facebook homepage
+* Simple design of spotify music player
 * Hosted in Firebase  
 
 ## Stack and framework used
