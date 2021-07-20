@@ -10,7 +10,7 @@
 }
 
 .footer__right * .MuiSlider-root {
-    width: 400px;
+    /* width: 400px; */
     color: green;
 }
 
