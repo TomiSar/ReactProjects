@@ -1,3 +1,7 @@
+## Deployed application
+Link for deployed application: 
+
+
 ## ReactJs Spotify clone application
 * This is a clone app of Spotify
 * Need to login first by google to see or add post
