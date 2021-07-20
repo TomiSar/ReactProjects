@@ -30,13 +30,19 @@ function App() {
         })
       });
 
-      // pull the playlists names from Spotify
       spotify.getUserPlaylists().then((playlists) => {
         dispatch({
           type: 'SET_PLAYLISTS',
           playlists: playlists
         });
       });
+
+      spotify.getPlaylist('6Dq6wmuDL7lXuUyRSyJywH').then(discover => {
+        dispatch({
+          type: 'SET_DISCOVER_WEEKLY',
+          discover_weekly: discover,
+        })
+      })
     }
   }, []);
 
