@@ -22,5 +22,7 @@ Link for deployed application:
 * Deployment using Firebase
 
 ## Installation of needed Packages for application uging npm or yarn
+yarn add @material-ui/core
+yarn add @material-ui/icons
 yarn add firebase
 yarn add -g firebase-tools
