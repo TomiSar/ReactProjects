@@ -17,3 +17,11 @@
 .sidebarchat__info {
     margin-left: 15px;
 }
+
+.sidebarchat__newchat {
+  padding-left: 60px;
+}
+
+.sidebarchat__newchat:hover {
+  background-color: #ebebeb;
+}
