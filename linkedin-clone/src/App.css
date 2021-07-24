@@ -1,4 +1,5 @@
-.app > img {
+.app > h2 > img {
+  padding-left: 50px;
   height: 100px;
   width: 100px;
 }

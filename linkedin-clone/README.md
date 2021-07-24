@@ -18,6 +18,9 @@ Link for deployed application:
 * Firestore Database
 * Firebase Hosting
 
+## React application created with REDUX template
+npx create-react-app linkedin-clone --template redux 
+
 ## Installation of needed Packages for application uging npm or yarn
 yarn add @material-ui/core
 yarn add @material-ui/icons

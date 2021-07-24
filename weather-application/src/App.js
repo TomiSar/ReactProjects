@@ -10,11 +10,12 @@ function App() {
       fetch(`http://api.openweathermap.org/data/2.5/weather?q=${query}&units=metric&APPID=${api_key}`)
       .then(res => res.json())
       .then(result => {
+        console.log(result);
         setQuery('');
         setWeather(result);
-        console.log(result);
       }).catch(error => {
-        console.log(error);
+        alert(error.message);
+        //console.log(error);
       });
     }
   }
@@ -49,8 +50,15 @@ function App() {
             <div className="temp">{weather.main.temp}°C</div>
             <div className="weather"><h6>feels like</h6>{weather.main.feels_like}°C</div>
             <div className="weather"><br/>{weather.weather[0].main}</div>
-            <div className="description">{weather.weather[0].description}</div>
-          </div>
+            <div className="description">
+              <h4>{weather.weather[0].description}</h4>
+            </div>
+            <div className="information">
+              <br />
+              <h4>Wind speed: {weather.wind.speed} km/h</h4>
+              <h5>Geolocation: lon:{weather.coord.lon} lat:{weather.coord.lat}</h5>
+              </div>
+            </div>          
         </div>
         ) : ('')}
       </main>

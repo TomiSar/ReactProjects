@@ -26,6 +26,5 @@ yarn add @material-ui/core
 yarn add @material-ui/icons
 yarn add firebase
 yarn add react-router-dom
-
 npm install --save @dicebear/avatars
 yarn add -g firebase-tools

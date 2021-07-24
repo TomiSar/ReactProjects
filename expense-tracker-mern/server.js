@@ -25,7 +25,7 @@ if (process.env.NODE_ENV === 'development') {
 // Postman GET http://localhost:4000/api/v1/transactions
 app.use('/api/v1/transactions', transactions);
 
-// Check produnction build first its going to load index.html
+// Check production build first its going to load index.html
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));
 

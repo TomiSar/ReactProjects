@@ -35,10 +35,10 @@ main {
   width: 100%;
   padding: 15px;
 
-  appearance: none;
+  /* appearance: none;
   background: none;
   border: none;
-  outline: none;
+  outline: none; */
 
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 0px 0px 16px 16px;
@@ -106,5 +106,19 @@ main {
   color: #FFF;
   font-size: 25px;
   font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.2);
+}
+
+.information  > h4{
+  font-size: 20px;
+  font-weight: 700;
+  color: aqua;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.2);
+}
+
+.information > h5{
+  font-size: 20px;
+  font-weight: 700;
+  color: blueviolet;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.2);
 }
