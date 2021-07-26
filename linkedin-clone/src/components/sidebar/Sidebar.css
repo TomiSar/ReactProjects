@@ -7,8 +7,11 @@
   height: fit-content;
 }
 
-.sidebar__avatar {
+.sidebar__top > .MuiAvatar-root {
   margin-bottom: 10px;
+  font-weight: bold;
+  color: #000;
+  background-color: lightskyblue;
 }
 
 .sidebar__top {
@@ -62,7 +65,7 @@
   font-weight: 600;
 }
 
-.stat__number {
+.sidebar__statnumber {
   font-weight: bold;
   color: #0a66c2 !important;
 }

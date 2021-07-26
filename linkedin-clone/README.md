@@ -13,18 +13,18 @@ Link for deployed application:
 * CSS
 * JavaScript
 * ES6
+* Redux Toolkit
 * Google login
 * Firebase Authentication
 * Firestore Database
 * Firebase Hosting
 
 ## React application created with REDUX template
-npx create-react-app linkedin-clone --template redux 
+* npx create-react-app linkedin-clone --template redux 
 
 ## Installation of needed Packages for application uging npm or yarn
-yarn add @material-ui/core
-yarn add @material-ui/icons
-yarn add firebase
-yarn add react-router-dom
-npm install --save @dicebear/avatars
-yarn add -g firebase-tools
+* yarn add @material-ui/core
+* yarn add @material-ui/icons
+* yarn add firebase
+* yarn add react-flip-move
+* yarn add -g firebase-tools
