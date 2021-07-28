@@ -7,23 +7,23 @@
 }
 
 body {
-  background: linear-gradient(
-    90deg,
-    rgba(48, 16, 255, 1) 0%,
-    rgba(100, 115, 255, 1) 100%
-  );
+  background-image: url('https://www.wallpaperbetter.com/wallpaper/168/736/915/earth-4k-space-4K-wallpaper-middle-size.jpg');
 }
 .todo__app {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 520px;
-  min-height: 600px;
-  background: #161a2b;
+  height: 900px;
   text-align: center;
   margin: 128px auto;
   border-radius: 10px;
-  padding-bottom: 32px;
+  background-image: url('https://images8.alphacoders.com/466/466113.jpg');
+}
+
+.todo__appbody {
+  flex: 1;
+  border-radius: 35px;
 }
 
 h1 {
@@ -41,22 +41,37 @@ h1 {
   margin-bottom: 32px;
 }
 
+.todo__list > h4 {
+  font-size: 16;
+  color: palegreen;
+  margin-top: 25px;
+}
+
+.todo__list > .todo__form > input {
+  font-size: 22;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  color: orange;
+  margin-top: 20px;
+}
+
 .todo__input {
   padding: 14px 32px 14px 16px;
   border-radius: 4px 0 0 4px;
   border: 2px solid #5d0cff;
   outline: none;
-  width: 320px;
+  width: 380px;
   background: transparent;
   color: #fff;
 }
 
 .todo__input::placeholder {
-  color: #e2e2e2;
+  color: orange;
 }
 
 .todo__button {
   padding: 16px;
+  font-weight: bold;
   border: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
@@ -70,9 +85,18 @@ h1 {
   text-transform: capitalize;
 }
 
-.todo__input.edit {
-  border: 2px solid #149fff;
+.todo__button:hover {
+  background: linear-gradient(
+    90deg,
+    rgb(6, 196, 22) 0%,
+    rgb(0, 250, 162) 100%
+  );
+  color: #161a2b;
 }
+
+/* .todo__input.edit {
+  border: 2px solid #149fff;
+} */
 
 .todo__button.edit {
   background: linear-gradient(
@@ -103,7 +127,7 @@ h1 {
 
   padding: 16px;
   border-radius: 5px;
-  width: 90%;
+  width: 470px;
 }
 
 .todo__row:nth-child(4n + 1) {
