@@ -27,6 +27,7 @@ Coming after Application is finished
 * Firebase Hosting 
 
 ## Installation of needed Packages for application uging npm or yarn
+* yarn add react-router-dom
 * yarn add styled-components
 * yarn add @material-ui/core
 * yarn add @material-ui/icons
