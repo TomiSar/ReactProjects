@@ -16,6 +16,7 @@ Link for deployed application: Coming soon..
 * ES6
 * Redux Toolkit
 * React Router
+* React currency format
 * Google login
 * Firebase Authentication
 * Firestore Database
@@ -27,4 +28,4 @@ Link for deployed application: Coming soon..
 * yarn add @material-ui/core
 * yarn add @material-ui/icons
 * yarn add react-router-dom
-* yarn add react-flip-move
+* yarn add react-currency-format
