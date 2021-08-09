@@ -7,6 +7,12 @@ Link for deployed application: Coming soon..
 * Simple design of Amazon web shop 
 * Hosted in Firebase
 
+## About the functionality application
+* Visitors can register using Full name, image url, email, and password.
+* Logged in users can add product in shopping basket, buy product, etc..
+* User can navigate by clicking Amazon logo to Home page and from shopping basket icon to checkout page.
+* Total number of products and sum is shown on basket /chekckout 
+* Logged in user can logout/signout from clicking Avatar on the Header.
 
 ## Stack and framework used
 * ReactJs
@@ -17,6 +23,8 @@ Link for deployed application: Coming soon..
 * Redux Toolkit
 * React Router
 * React currency format
+* React Context API
+* UseHistory
 * Google login
 * Firebase Authentication
 * Firestore Database

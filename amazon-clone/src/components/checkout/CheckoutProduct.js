@@ -6,7 +6,7 @@ function CheckoutProduct({ id, title, image, price, rating }) {
     const [{ basket }, dispatch] = useStateValue();
 
     const removeFromBasket = () => {
-         // dispatch the item into the data layer
+         // remove the item from the basket
          dispatch({
             type: 'REMOVE_FROM_BASKET',
             id: id,
