@@ -2,9 +2,9 @@
 Link for deployed application: Coming soon..
 
 ## ReactJs Amazon clone application
-* This is a clone app of Amazon
-* Need to login first by google to see your wall and post or send messages
-* Simple design of Amazon
+* This is a clone app of Amazon web shop
+* Need to login in application first by using Email credentials
+* Simple design of Amazon web shop 
 * Hosted in Firebase
 
 
@@ -15,14 +15,16 @@ Link for deployed application: Coming soon..
 * JavaScript
 * ES6
 * Redux Toolkit
+* React Router
 * Google login
 * Firebase Authentication
 * Firestore Database
 * Firebase Hosting
 
 ## Installation of needed Packages for application uging npm or yarn
+* yarn add firebase
+* yarn global add firebase-tools
 * yarn add @material-ui/core
 * yarn add @material-ui/icons
-* yarn add firebase
+* yarn add react-router-dom
 * yarn add react-flip-move
-* yarn add -g firebase-tools
