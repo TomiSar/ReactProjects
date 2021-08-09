@@ -25,9 +25,13 @@ Link for deployed application: Coming soon..
 * React currency format
 * React Context API
 * UseHistory
-* Google login
+* Stripe functionality
+* Checkout page (payment page)
+* Cloud function to process stripe payment (serverless)
+* Firebase for realtime database (Firestore)
+* MERN Stack 
+* Email login
 * Firebase Authentication
-* Firestore Database
 * Firebase Hosting
 
 ## Installation of needed Packages for application uging npm or yarn
@@ -37,3 +41,4 @@ Link for deployed application: Coming soon..
 * yarn add @material-ui/icons
 * yarn add react-router-dom
 * yarn add react-currency-format
+* yarn add react-flip-move

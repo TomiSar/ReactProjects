@@ -51,7 +51,7 @@ function Home() {
                 rating={5}
                 image="https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?$300x400_retinamobilex2$" />
             <Product
-                id="3254354345"
+                id="54354345"
                 title="New Apple iPad Pro (12.9-inch, Wi-Fi, 128GB) - Silver (4th Generation)"
                 price={598.99}
                 rating={4}
@@ -59,12 +59,40 @@ function Home() {
         </div>
 
         <div className="home__row">
-        <Product 
+          <Product 
                 id="10752638"
                 title="Apple iMac 27 Retina 5K Display, 3.6GHz 10-Core Intel Core i9, 64GB RAM, 1TB SSD, AMD Radeon Pro 5300 4GB"
                 price={3799.00}
                 rating={5}
                 image="https://m.media-amazon.com/images/I/71z+iYqulHL._AC_SL1200_.jpg" />
+          <Product 
+                id="19203847"
+                title="ASUS ZenBook Pro Duo UX581 Laptop, 15.6” 4K UHD NanoEdge Touch Display, Intel Core i7-10750H, 16GB RAM, 1TB PCIe SSD, GeForce RTX 2060, ScreenPad Plus"
+                price={2298.00}
+                rating={5}
+                image="https://m.media-amazon.com/images/I/81e46P26WuS._AC_SL1500_.jpg" />
+        </div>
+
+        <div className="home__row">
+          <Product 
+                id="66027398"
+                title="Adidas Originals Jeans Men's shoes"
+                price={99.00}
+                rating={5}
+                image="https://i8.amplience.net/i/jpl/jd_378256_a?qlt=92&w=750&h=531&v=1&fmt=webp" />
+          <Product 
+              id="91876530"
+                title="Bugatti RIPTIDE Marine/Brown"
+                price={55,96}
+                rating={4}
+                image="https://photos6.spartoo.eu/photos/189/18970666/18970666_500_A.jpg" />
+          <Product 
+              id="98761324"
+                title="Adidas ED6074 Men originals Firebird Track TOP jacket Orange"
+                price={65.43}
+                rating={5}
+                image="https://i.ebayimg.com/images/g/D08AAOSwndZfIl97/s-l1600.jpg" />
+
         </div>
       </div>
     </div>
