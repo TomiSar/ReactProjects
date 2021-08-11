@@ -29,16 +29,28 @@ Link for deployed application: Coming soon..
 * Checkout page (payment page)
 * Cloud function to process stripe payment (serverless)
 * Firebase for realtime database (Firestore)
+* React Stripe elements
 * MERN Stack 
 * Email login
 * Firebase Authentication
 * Firebase Hosting
 
-## Installation of needed Packages for application uging npm or yarn
+## Documents
+* https://stripe.com/docs/stripe-js/react#elements-provider
+
+## Installation of needed Packages for application using npm or yarn
 * yarn add firebase
 * yarn global add firebase-tools
 * yarn add @material-ui/core
 * yarn add @material-ui/icons
 * yarn add react-router-dom
 * yarn add react-currency-format
+* yarn add @stripe/stripe-js
+* yarn add @stripe/react-stripe-js
+* yarn add axios
 * yarn add react-flip-move
+
+## Backend inside functions folder install dependendies
+* yarn add express
+* yarn add cors
+* yarn add stripe
